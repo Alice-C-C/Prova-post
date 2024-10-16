@@ -14,8 +14,5 @@ app.use("/workshop", workshop)
 app.use("/vehicle", vehicle)
 app.use("/maintenence", maintenance)
 
-const PORT=3000
 
-app.listen(PORT, () => {
-    console.log(`Servidor rodando na porta ${PORT}`);
-  });
+app.listen(process.env.API_PORT, () => console.log("Servidor executando na porta " + process.env.API_PORT));

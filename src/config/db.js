@@ -4,7 +4,7 @@ import "dotenv/config"
 const connectDB = async() => {
     try {
         await mongoose.connect(
-            `mongodb://localhost:27017/banco`
+            `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASSWORD}@${process.env.CLUSTER_ADDRESS}/${process.env.DB_NAME}`
         );
         console.log("Conectado ao MongoDB")
         
