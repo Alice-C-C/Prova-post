@@ -6,7 +6,7 @@
     "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.7.1"
+    "mongoose": "^8.7.2"
   },
   "name": "prova",
   "version": "1.0.0",
@@ -15,7 +15,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "git": "git add . && git commit -m \"commit\" && git push"
+    "git": "git add . && git commit -m \"commit\" && git push",
+    "start": "node ./src/app.js"
   },
   "keywords": [],
   "author": "",
